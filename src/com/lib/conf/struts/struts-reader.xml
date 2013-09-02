@@ -1,0 +1,45 @@
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="reader" extends="struts-default">		
+		<action name="listReader" class="listReaderAction">
+			<result name="listReaderSuccess" type="freemarker">/WEB-INF/pages/listReader.ftl</result>
+			<result name="listReaderFail" >fail.html</result>
+		</action>
+		
+		<action name="addReader" class="addReaderAction">
+			<result name="addReaderSuccess">success.html</result>
+			<result name="addReaderFail" >fail.html</result>
+			<result name="readerIDExits" >/errorMessage/readerIDExits.html</result>
+			<result name="readerBarCodeExits" >/errorMessage/readerBarCodeExits.html</result>
+		</action>
+		
+		<action name="deleteReader" class="deleteReaderAction">
+			<result name="deleteReaderSuccess">success.html</result>
+			<result name="deleteReaderFail" >fail.html</result>
+		</action>
+		
+		<action name="updateReader" class="updateReaderAction">
+			<result name="updateReaderSuccess">success.html</result>
+			<result name="updateReaderFail" >fail.html</result>
+		</action>
+		
+		<action name="findReader" class="findReaderAction">
+			<result name="findReaderSuccess">readerRecordMF.html</result>
+			<result name="findReaderFail" >fail.html</result>
+			<result name="nullReaderInfo" >nullReaderInfo.html</result>
+		</action>
+		
+		<action name="displayReaderInfo" class="displayReaderInfoAction">
+			<result name="displayReaderInfoSuccess">readerInfo.jsp</result>
+			<result name="displayReaderInfoFail" >fail.html</result>
+		</action>
+	
+		<action name="queryBeforeEditReader" class="queryBeforeEditReaderAction">
+			<result name="queryBeforeEditReaderSuccess">/backDesk/readerInfo.jsp</result>
+			<result name="queryBeforeEditReaderFail" >fail.html</result>
+		</action>	
+	</package>
+</struts>

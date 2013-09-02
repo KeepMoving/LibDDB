@@ -1,0 +1,18 @@
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="bookType" extends="struts-default">		
+		<action name="listBookType" class="listBookTypeAction">
+			<result name="listBookTypeSuccess" type="freemarker">/WEB-INF/pages/listBookType.ftl</result>
+			<result name="listBookTypeFail" >errorLink.html</result>
+		</action>
+		
+		<action name="addBookType" class="addBookTypeAction">
+			<result name="addBookTypeSuccess">success.html</result>
+			<result name="addBookTypeFail" >fail.html</result>
+		</action>
+	</package>
+
+</struts>

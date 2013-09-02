@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping 	package="com.lib.project.model">
+	<class name="Record" table="record">
+		<id name="id" column="id" type="java.lang.Integer"/>
+		<property name="readerID" column="readerID" type="java.lang.Integer"/>
+		<property name="bookID" column="bookID" type="java.lang.Integer"/>
+		<property name="borrowTime" column="borrowTime" type="java.sql.Timestamp"/>
+		<property name="ask_backTime" column="ask_backTime" type="java.sql.Timestamp"/>				
+		<property name="operator" column="operator" type="java.lang.Integer"/>
+		<property name="isBack" column="isBack" type="string"/>		
+		<property name="real_backTime" column="real_backTime" type="java.sql.Timestamp"/>		
+		<property name="location" column="location" type="string"/>			
+	</class>
+</hibernate-mapping>

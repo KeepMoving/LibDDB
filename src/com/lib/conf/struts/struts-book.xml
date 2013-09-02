@@ -1,0 +1,49 @@
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="book" extends="struts-default">		
+		<action name="listBook" class="listBookAction">
+			<result name="listBookSuccess" type="freemarker">/WEB-INF/pages/listBook.ftl</result>
+			<result name="listBookFail" >errorLink.html</result>
+		</action>
+		
+		<action name="addBook" class="addBookAction">
+			<result name="addBookSuccess">success.html</result>
+			<result name="BookIDExist" >/errorMessage/bookIDExist.html</result>
+			<result name="BarCodeExist" >/errorMessage/barCodeExist.html</result>
+		</action>
+		
+		<action name="queryBeforeAddBook" class="queryBeforeAddBookAction">
+			<result name="queryBeforeAddBookSuccess" type="freemarker">/WEB-INF/pages/addBook.ftl</result>
+			<result name="queryBeforeAddBookFail" >errorLink.html</result>
+		</action>
+		
+		<action name="listBookByCondition" class="listBookByConditionAction">
+			<result name="listBookByConditionSuccess" type="freemarker">/WEB-INF/pages/listBook.ftl</result>
+			<result name="listBookByConditionFail" >errorLink.html</result>
+		</action>
+		
+		<action name="listBookByConditionAdv" class="listBookByConditionAdvAction">
+			<result name="listBookByConditionAdvSuccess" type="freemarker">/WEB-INF/pages/listBookAdv.ftl</result>
+			<result name="listBookByConditionAdvFail" >errorLink.html</result>
+		</action>
+		
+		<action name="deleteBook" class="deleteBookAction">
+			<result name="deleteBookSuccess">success.html</result>
+			<result name="deleteBookFail" >fail.html</result>
+		</action>
+		
+		<action name="queryBeforeEditBook" class="queryBeforeEditBookAction">
+			<result name="queryBeforeEditBookSuccess">editBook.jsp</result>
+			<result name="queryBeforeEditBookFail" >errorLink.html</result>
+		</action>
+		
+		<action name="updateBook" class="updateBookAction">
+			<result name="updateBookSuccess" type="redirect">success.html</result>
+			<result name="BookIDExist" >errorLink.html</result>
+			<result name="BarCodeExist" >errorLink.html</result>
+		</action>
+	</package>
+</struts>

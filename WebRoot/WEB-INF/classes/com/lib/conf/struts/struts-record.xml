@@ -1,0 +1,37 @@
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="record" extends="struts-default">		
+		<action name="addRecord" class="addRecordAction">
+			<result name="addRecordSuccess">success.html</result>
+			<result name="addRecordFail" >errorLink.html</result>
+		</action>
+		
+		<action name="listRecord" class="listRecordAction">
+			<result name="listRecordSuccess" type="freemarker">/WEB-INF/pages/listRecord.ftl</result>
+			<result name="listRecordFail" >errorLink.html</result>
+		</action>
+		
+		<action name="listRecordByReaderID" class="listRecordByReaderIDAction">
+			<result name="listRecordByReaderIDSuccess" type="freemarker">/WEB-INF/pages/listRecord.ftl</result>
+			<result name="listRecordByReaderIDFail" >errorLink.html</result>
+		</action>
+		
+		<action name="listRecordByConditionAdv" class="listRecordByConditionAdvAction">
+			<result name="listRecordByConditionAdvSuccess" type="freemarker">/WEB-INF/pages/listRecordAdv.ftl</result>
+			<result name="listRecordByConditionAdvFail" >errorLink.html</result>
+		</action>
+		
+		<action name="queryBeforeEditRecord" class="queryBeforeEditRecordAction">
+			<result name="queryBeforeEditRecordSuccess">editRecord.jsp</result>
+			<result name="queryBeforeEditRecordFail" >errorLink.html</result>
+		</action>
+		
+		<action name="updateRecord" class="updateRecordAction">
+			<result name="updateRecordSuccess">success.html</result>
+			<result name="updateRecordFail" >errorLink.html</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="false" default-dependency-check="none"
+	default-autowire="byName">
+	
+	<bean name="listBookAction" class="com.lib.project.action.ListBookAction" singleton="false" />
+	<bean name="addBookAction" class="com.lib.project.action.AddBookAction" singleton="false" />
+	<bean name="queryBeforeAddBookAction" class="com.lib.project.action.QueryBeforeAddBookAction" singleton="false" />
+	<bean name="listBookByConditionAction" class="com.lib.project.action.ListBookByConditionAction" singleton="false" />
+	<bean name="listBookByConditionAdvAction" class="com.lib.project.action.ListBookByConditionAdvAction" singleton="false" />
+	<bean name="queryBeforeEditBookAction" class="com.lib.project.action.QueryBeforeEditBookAction" singleton="false" />
+	<bean name="updateBookAction" class="com.lib.project.action.UpdateBookAction" singleton="false" />
+	<bean name="deleteBookAction" class="com.lib.project.action.DeleteBookAction" singleton="false" />
+	
+</beans>

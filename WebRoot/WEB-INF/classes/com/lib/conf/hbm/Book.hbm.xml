@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping 	package="com.lib.project.model">
+	<class name="Book" table="book">
+		<id name="bookID" column="bookID"/>
+		<property name="barCode" column="barCode" type="string"/>
+		<property name="isbn" column="isbn" type="string"/>
+		<property name="bookName" column="bookName" type="string"/>
+		<property name="typeId" column="typeId" type="java.lang.Integer"/>				
+		<property name="author" column="author" type="string"/>
+		<property name="translator" column="translator" type="string"/>		
+		<property name="publisher" column="publisher" type="string"/>		
+		<property name="indexNo" column="indexNo" type="string"/>		
+		<property name="addTime" column="addTime" type="java.sql.Timestamp"/>		
+		<property name="price" column="price" type="java.lang.Double"/>		
+		<property name="operator" column="operator" type="java.lang.Integer"/>		
+		<property name="status" column="status" type="string"/>		
+		<property name="location" column="location" type="string"/>		
+	</class>
+</hibernate-mapping>

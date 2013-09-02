@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- 数据源文件 -->
+    <import resource="com/lib/conf/spring/spring-db.xml" />
+     	
+	<import resource="com/lib/conf/spring/book/spring-dao.xml" />
+	<import resource="com/lib/conf/spring/book/spring-service.xml" />
+	<import resource="com/lib/conf/spring/book/spring-action.xml" />
+	
+	<import resource="com/lib/conf/spring/bookType/spring-dao.xml" />
+	<import resource="com/lib/conf/spring/bookType/spring-service.xml" />
+	<import resource="com/lib/conf/spring/bookType/spring-action.xml" />	
+	
+	<import resource="com/lib/conf/spring/manager/spring-dao.xml" />
+	<import resource="com/lib/conf/spring/manager/spring-service.xml" />
+	<import resource="com/lib/conf/spring/manager/spring-action.xml" />		
+	
+	<import resource="com/lib/conf/spring/readertype/spring-dao.xml" />
+	<import resource="com/lib/conf/spring/readertype/spring-service.xml" />
+	<import resource="com/lib/conf/spring/readertype/spring-action.xml" />		
+	
+	<import resource="com/lib/conf/spring/reader/spring-dao.xml" />
+	<import resource="com/lib/conf/spring/reader/spring-service.xml" />
+	<import resource="com/lib/conf/spring/reader/spring-action.xml" />	
+	
+	<import resource="com/lib/conf/spring/record/spring-dao.xml" />
+	<import resource="com/lib/conf/spring/record/spring-service.xml" />
+	<import resource="com/lib/conf/spring/record/spring-action.xml" />	
+</beans>

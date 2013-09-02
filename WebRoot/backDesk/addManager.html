@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <title>添加新管理员</title>
+  </head>
+ 
+  <body>
+	  <form action="../addManager.action" method="post">
+	    <p>新管理员ID：
+  			<input type="text" name="managerID" value="" />
+  		</p>
+  		
+  		<p>姓名：    
+    		<input type="text" name="managerName" value=""/>
+  		</p>
+  		
+  		<p>密码：    
+    		<input type="text" name="password" value=""/>
+  		</p>
+  		
+  		<p>权限：    
+    		<select name="typeId" id="typeId">
+  				<option value ="1">超级管理员</option>
+  				<option value ="2">普通管理员</option>
+			</select>
+  		</p>  	
+  				  				  		  			
+	    <p>
+		    <input type="submit" value="提交"/>
+		    <input type="reset" value="取消"/>
+		</p>
+	  </form>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="false" default-dependency-check="none"
+	default-autowire="byName">
+	
+	<bean name="addRecordAction" class="com.lib.project.action.AddRecordAction" singleton="false" />
+	<bean name="listRecordAction" class="com.lib.project.action.ListRecordAction" singleton="false" />
+	<bean name="listRecordByReaderIDAction" class="com.lib.project.action.ListRecordByReaderIDAction" singleton="false" />
+	<bean name="listRecordByConditionAdvAction" class="com.lib.project.action.ListRecordByConditionAdvAction" singleton="false" />
+	<bean name="queryBeforeEditRecordAction" class="com.lib.project.action.QueryBeforeEditRecordAction" singleton="false" />
+	<bean name="updateRecordAction" class="com.lib.project.action.UpdateRecordAction" singleton="false" />	
+</beans>
